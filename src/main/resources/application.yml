@@ -1,0 +1,23 @@
+server:
+  port: 80
+  servlet:
+    context-path: /security
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/java?characterEncoding=UTF-8&serverTimezone=UTC
+    username: java
+    password: java1234
+    
+tiger:
+  key: cacao1234!
